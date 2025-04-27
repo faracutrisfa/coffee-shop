@@ -11,86 +11,52 @@
 </head>
 
 <body class="mx-auto bg-background" style="max-width: 375px; min-height: 100vh;">
-    <section class="bg-white p-4">
-        <div class="d-flex align-items-center" style="gap: 124px;">
-            <a href="detail.html" class="text-dark">
-                <i class="bi bi-arrow-left"></i>
-            </a>
-            <h6 class="m-0">Order</h6>
-        </div>
+    <section class="position-relative" style="height: 100vh;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.4320103509176!2d112.61503787455648!3d-7.954228579253753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78827857132471%3A0x1d7dfc436e60539e!2sJl.%20Terusan%20Cikampek%20No.46%2C%20Penanggungan%2C%20Kec.%20Klojen%2C%20Kota%20Malang%2C%20Jawa%20Timur%2065113!5e0!3m2!1sid!2sid!4v1745759387311!5m2!1sid!2sid"
+            width="375" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        <div class="d-flex bg-light rounded-3 p-1 mb-3 mt-3">
-            <button class="btn text-white bg-normal rounded-3 flex-fill">Deliver</button>
-            <button class="btn flex-fill">Pick Up</button>
-        </div>
+        <a href="detail.html" class="btn btn-light position-absolute top-0 start-0 m-3">
+            <i class="bi bi-arrow-left"></i>
+        </a>
 
-        <h6 class="fw-bold mb-2">Delivery Address</h6>
-        <p class="fw-bold mb-0 small">Jl. Kpg Sutoyo</p>
-        <p class="text-muted small">Kpg. Sutoyo No. 620, Bilzen, Tanjungbalai.</p>
-        <div class="d-flex gap-1 mb-2">
-            <button class="btn btn-outline-secondary btn-sm rounded-pill">
-                <i class="bi bi-pencil"></i> Edit Address
-            </button>
-            <button class="btn btn-outline-secondary btn-sm rounded-pill">
-                <i class="bi bi-journal-text"></i> Add Note
-            </button>
-        </div>
-
-        <hr>
-
-        <div class="d-flex align-items-center">
-            <img src="assets/images/coffee-2.png" alt="Caffe Mocha" class="rounded-2"
-                style="width: 48px; height: 48px; object-fit: cover;">
-            <div class="ms-3 flex-grow-1">
-                <h6 class="m-0">Caffe Mocha</h6>
-                <small class="text-muted">Deep Foam</small>
+        <div class="position-absolute bottom-0 start-0 end-0"
+            style="background: white; border-top-left-radius: 24px; border-top-right-radius: 24px; padding: 24px 16px;">
+            <div class="text-center mb-3">
+                <h6 class="fw-bold mb-1">10 minutes left</h6>
+                <small class="text-muted">Delivery to <span class="fw-semibold text-success">Jl. Terusan Cikampek
+                        No.46</span></small>
             </div>
-            <div class="d-flex align-items-center">
-                <button class="btn btn-sm btn-outline-secondary rounded-circle px-2 py-0">-</button>
-                <span class="mx-3">1</span>
-                <button class="btn btn-sm btn-outline-secondary rounded-circle px-2 py-0">+</button>
+
+            <div class="progress mb-4" style="height: 6px; background-color: #e0e0e0;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 60%;"></div>
             </div>
-        </div>
 
-        <hr>
-
-        <div class="d-flex justify-content-between align-items-center p-3 border bg-light rounded-4 mb-3">
-            <div class="d-flex align-items-center gap-2">
-                <i class="bi bi-tag text-normal"></i>
-                <span class="small fw-semibold">1 Discount is Applies</span>
+            <div class="d-flex align-items-center p-3 mb-3" style="background-color: #f9f9f9; border-radius: 16px;">
+                <i class="bi bi-truck text-warning fs-3 me-3"></i>
+                <div>
+                    <small class="fw-bold d-block">Delivered your order</small>
+                    <small class="text-muted">We will deliver your goods to you in the shortest possible time.</small>
+                </div>
             </div>
-            <i class="bi bi-chevron-right"></i>
-        </div>
 
-        <h6 class="fw-bold mb-3">Payment Summary</h6>
-        <div class="d-flex justify-content-between small">
-            <span>Price</span>
-            <span class="fw-bold">$ 4.53</span>
-        </div>
-        <div class="d-flex justify-content-between mb-4 small">
-            <span>Delivery Fee</span>
-            <div>
-                <del class="text-muted me-2">$ 2.0</del>
-                <span class="fw-bold">$ 1.0</span>
-            </div>
-        </div>
-
-        <div class="bg-light rounded-4 p-3 mb-4">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center gap-2">
-                    <i class="bi bi-wallet2 text-normal"></i>
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <img src="assets/images/profile-image.jpg" alt="Courier" class="rounded-circle me-3"
+                        style="width: 48px; height: 48px;">
                     <div>
-                        <small class="d-block">Cash/Wallet</small>
-                        <span class="text-danger small">$ 5.53</span>
+                        <small class="fw-bold">Budiyono Siregar</small><br>
+                        <small class="text-muted">Personal Courier</small>
                     </div>
                 </div>
-                <i class="bi bi-chevron-down"></i>
+                <a href="#" class="btn btn-light rounded-3">
+                    <i class="bi bi-telephone"></i>
+                </a>
             </div>
         </div>
-
-        <button class="btn text-white w-100 rounded-4 py-2" onclick="location.href='order.html'"
-            style="background-color: #B87333; border: none;">Order</button>
     </section>
+
 </body>
 
 </html>
