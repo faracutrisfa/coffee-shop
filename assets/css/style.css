@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+body,
+html {
+  font-family: "Sora", sans-serif;
+}
+
+:root {
+  --color-normal: #c67c4e;
+  --color-normal-active: #d8d8d8;
+  --color-light: #edd6c8;
+  --color-dark: #313131;
+  --color-border: #e3e3e3;
+  --color-background: #f9f2ed;
+  --color-lighter: #a2a2a2;
+  --color-normal-hover: #2a2a2a;
+}
+
+.text-normal {
+  color: var(--color-normal);
+}
+.text-normal-active {
+  color: var(--color-normal-active);
+}
+.text-light {
+  color: var(--color-light);
+}
+.text-dark {
+  color: var(--color-dark);
+}
+.text-lighter {
+  color: var(--color-lighter);
+}
+
+.bg-normal {
+  background-color: var(--color-normal);
+}
+.bg-normal-hover {
+  background-color: var(--color-normal-hover);
+}
+.bg-light {
+  background-color: var(--color-light);
+}
+.bg-dark {
+  background-color: var(--color-dark);
+}
+.bg-background {
+  background-color: var(--color-background);
+}

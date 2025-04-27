@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=375, initial-scale=1.0">
+    <title>Coffee App - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+
+<body class="mx-auto bg-background" style="max-width: 375px; min-height: 100vh;">
+    <section class="bg-white">
+        <div class="bg-dark p-4">
+            <p class="text-light px-1">Location</p>
+            <select id="city" name="city" class="bg-dark text-light border-0 pe-1">
+                <option value="jakarta">Bilzen, Tanjungbalai</option>
+                <option value="surabaya">Surabaya</option>
+                <option value="bandung">Bandung</option>
+                <option value="yogyakarta">Yogyakarta</option>
+                <option value="bali">Bali</option>
+            </select>
+
+            <div class="d-flex align-items-center mt-4">
+                <div class="flex-grow-1 me-2">
+                    <div class="input-group bg-normal-hover">
+                        <span class="input-group-text bg-normal-hover border-0">
+                            <i class="bi bi-search text-white"></i>
+                        </span>
+                        <input type="text" class="text-lighter bg-normal-hover border-0" placeholder="Search coffee"
+                            aria-label="Search">
+                    </div>
+                </div>
+                <button class="btn rounded-3" style="background-color: #C67C4E; width: 45px; height: 45px;">
+                    <i class="bi bi-sliders text-white"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="p-3">
+            <div class="d-flex overflow-auto mb-3 gap-2">
+                <button class="btn btn-sm fw-medium bg-normal text-white" style="font-size: 12px;">All Coffee</button>
+                <button class="btn btn-sm" style="font-size: 12px;">Machiato</button>
+                <button class="btn btn-sm" style="font-size: 12px;">Latte</button>
+                <button class="btn btn-sm" style="font-size: 12px;">Americano</button>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-6" style="cursor: pointer;" onclick="window.location.href='detail.html';">
+                    <div class="card rounded-4 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="assets/images/coffee-2.png" class="card-img-top rounded-top-4" alt="Caffe Mocha">
+                            <div class="position-absolute top-0 end-0 m-2 d-flex align-items-center bg-white rounded-pill px-2 py-1"
+                                style="font-size: 0.75rem;">
+                                <i class="bi bi-star-fill text-warning me-1"></i> 4.8
+                            </div>
+                        </div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Caffe Mocha</h6>
+                            <p class="text-muted mb-2" style="font-size: 0.8rem;">Deep Foam</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="mb-0">$ 4.53</h5>
+                                <button class="btn btn-sm rounded-3 text-white" style="background-color: #C67C4E;">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card rounded-4 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="assets/images/coffee-1.png" class="card-img-top rounded-top-4" alt="Flat White">
+                            <div class="position-absolute top-0 end-0 m-2 d-flex align-items-center bg-white rounded-pill px-2 py-1"
+                                style="font-size: 0.75rem;">
+                                <i class="bi bi-star-fill text-warning me-1"></i> 4.8
+                            </div>
+                        </div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Flat White</h6>
+                            <p class="text-muted mb-2" style="font-size: 0.8rem;">Espresso</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="mb-0">$ 3.53</h5>
+                                <button class="btn btn-sm rounded-3 text-white" style="background-color: #C67C4E;">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card rounded-4 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="assets/images/coffee-2.png" class="card-img-top rounded-top-4" alt="Caffe Mocha">
+                            <div class="position-absolute top-0 end-0 m-2 d-flex align-items-center bg-white rounded-pill px-2 py-1"
+                                style="font-size: 0.75rem;">
+                                <i class="bi bi-star-fill text-warning me-1"></i> 4.8
+                            </div>
+                        </div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Caffe Mocha</h6>
+                            <p class="text-muted mb-2" style="font-size: 0.8rem;">Deep Foam</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="mb-0">$ 4.53</h5>
+                                <button class="btn btn-sm rounded-3 text-white" style="background-color: #C67C4E;">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card rounded-4 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="assets/images/coffee-1.png" class="card-img-top rounded-top-4" alt="Flat White">
+                            <div class="position-absolute top-0 end-0 m-2 d-flex align-items-center bg-white rounded-pill px-2 py-1"
+                                style="font-size: 0.75rem;">
+                                <i class="bi bi-star-fill text-warning me-1"></i> 4.8
+                            </div>
+                        </div>
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Flat White</h6>
+                            <p class="text-muted mb-2" style="font-size: 0.8rem;">Espresso</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="mb-0">$ 3.53</h5>
+                                <button class="btn btn-sm rounded-3 text-white" style="background-color: #C67C4E;">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav class="navbar bg-white shadow-lg rounded-top-4 position-fixed w-100 px-5 py-2"
+        style="bottom: 0; max-width: 375px; left: 50%; transform: translateX(-50%);">
+        <div class="d-flex justify-content-between align-items-center w-100">
+            <a href="#" class="text-center text-decoration-none">
+                <i class="bi bi-house-fill" style="color: #C67C4E; font-size: 1.7rem;"></i>
+            </a>
+            <a href="#" class="text-center text-decoration-none">
+                <i class="bi bi-heart" style="color: #888888; font-size: 1.7rem;"></i>
+            </a>
+            <a href="#" class="text-center text-decoration-none">
+                <i class="bi bi-bag" style="color: #888888; font-size: 1.7rem;"></i>
+            </a>
+            <a href="#" class="text-center text-decoration-none">
+                <i class="bi bi-bell" style="color: #888888; font-size: 1.7rem;"></i>
+            </a>
+        </div>
+    </nav>
+
+</body>
+
+</html>
